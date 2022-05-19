@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: black;
+}
+
+.container .header1{
+    display: flex;
+    width: 60vh;
+    height: 35vh;
+    align-items: flex-end;
+    font-size: 55px;
+    margin: 0 0 5px 30px;
+    color: white;
+}
+
+.container .first-p{
+    width: 60vh;
+    height: auto;
+    font-size: 35px;
+    margin: 0 0 5px 30px;
+    color: white;
+}
+
+.container .second-p{
+    font-size: 20px;
+    margin: 0 0 5px 30px;
+    width: 80vh;
+    color: white;
+}
+
+
+span{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  perspective: 1000px;
+  margin: 10px 0 0 30px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "Start Game";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #000;
+  background: #fff;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #fff;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.gif-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin-top: 220px;
+    width: 100vh;
+    height: 40vh;
+}

@@ -79,13 +79,3 @@ span a:hover{
   transform: translateZ(-25px) rotateX(-90deg);
 }
 
-.gif-container{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    margin-top: 220px;
-    width: 100vh;
-    height: 40vh;
-}

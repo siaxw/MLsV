@@ -62,7 +62,7 @@ span a:after{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid black;
+  border: 5px solid #FF4B2B;
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -78,4 +78,5 @@ span a:after{
 span a:hover{
   transform: translateZ(-25px) rotateX(-90deg);
 }
+
 

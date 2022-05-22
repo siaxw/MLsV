@@ -8,7 +8,7 @@
 }
 
 body{
-    background: black;
+    background: #1b1d34;
 }
 
 .container .header1{
@@ -18,7 +18,7 @@ body{
     align-items: flex-end;
     font-size: 55px;
     margin: 0 0 5px 30px;
-    color: white;
+    color: #E84545;
 }
 
 .container .first-p{
@@ -26,8 +26,14 @@ body{
     height: auto;
     font-size: 35px;
     margin: 0 0 5px 30px;
-    color: white;
+    color: #622b36;
+    transition: 0.3s;
 }
+
+.container .first-p:hover{
+  color: #ea113c;
+}
+
 
 .container .second-p{
     font-size: 20px;
@@ -36,47 +42,65 @@ body{
     color: white;
 }
 
+.container .btn-start-game{
+  margin: 10px 0 0 25px;
+  width: 300px;
+  height: 30px;
+  background: #1b1d34;
+  border: 1px solid white;
+  border-radius: 15px;
+  transition: 0.6s;
+}
 
-span{
-  position: relative;
-  display: inline-flex;
-  width: 180px;
-  height: 55px;
-  perspective: 1000px;
-  margin: 10px 0 0 30px;
+.container .btn-start-game:hover{
+  background: black;
 }
-span a{
-  font-size: 19px;
-  letter-spacing: 1px;
-  transform-style: preserve-3d;
-  transform: translateZ(-25px);
-  transition: transform .25s;
-  
+
+.container .btn-start-game a{
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  transition: .3s;
 }
-span a:before,
-span a:after{
+
+.container .btn-start-game a:hover{
+  color: #ea113c;
+}
+
+.wrapper{
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
   position: absolute;
-  content: "Start Game";
-  height: 55px;
-  width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid #FF4B2B;
-  box-sizing: border-box;
-  border-radius: 5px;
+  right: 70px;
+  top: 250px;
 }
-span a:before{
-  color: #000;
-  background: #fff;
-  transform: rotateY(0deg) translateZ(25px);
+
+.wrapper h1{
+  color: #E84545;
+  margin: 0 0 10px 0;
 }
-span a:after{
+
+.wrapper h2{
+  color: #E84545;
+  opacity: 0;
+}
+
+.wrapper .progress_line{
+  background-color: #E84545;
+  bottom: 0;
   color: #fff;
-  transform: rotateX(90deg) translateZ(25px);
-}
-span a:hover{
-  transform: translateZ(-25px) rotateX(-90deg);
+  left: 0;
+  top: 0;
+  position: absolute;
+  text-align: center;
 }
 
-
+.wrapper .progress_line-bg{
+  background: #ccc;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}

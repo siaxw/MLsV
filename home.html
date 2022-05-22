@@ -16,7 +16,39 @@
 				most important character you have is yourself. Pump up your skills and
 				get stronger.
 			</p>
-			<span><a href="/todo/toDoList.html"></a></span>
+			<button type="button" class="btn-start-game">
+				<a href="/toDo/toDoList.html">Start Game</a>
+			</button>
+			<div class="wrapper">
+				<h1>Level 1:</h1>
+				<div class="progress">
+					<div class="progress_line-bg">
+						<div
+							class="progress_line"
+							id="progress_line"
+							style="width: 10%"
+						></div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<script>
+			function progress() {
+				let elem = document.getElementById("progress_line"),
+					width = 1,
+					id = setInterval(progressStatus, 25),
+					elemCong = document.getElementById("cong");
+				function progressStatus() {
+					if (width >= 100) {
+						clearInterval(id);
+					} else {
+						width++;
+						elem.style.width = width + "%";
+						elem.innerHTML = width * 1 + "%";
+					}
+				}
+			}
+			progress();
+		</script>
 	</body>
 </html>

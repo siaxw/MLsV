@@ -120,10 +120,10 @@ body{
 
 .wrapper{
   margin: 0 auto;
-  max-width: 550px;
+  max-width: 700px;
   width: 100%;
   position: absolute;
-  right: 70px;
+  right: 100px;
   top: 250px;
 }
 

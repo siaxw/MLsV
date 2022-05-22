@@ -14,7 +14,6 @@
 
 
 .header h1{
-    border: 5px solid white;
     width: 85px;
     height: auto;
     margin: 10px 0 5px 5px;
@@ -65,7 +64,7 @@
 
 
 .title h1{
-    margin: 10px 0 0px 25px;
+    margin: 40px 0 0px 35px;
 }
 
 
@@ -75,27 +74,27 @@
     display: block;
 }
 
-/*
-#inputField{
-    margin: 10px 0 0 20px;
+.container .inputField{
+    margin: 15px 0 0 35px;
     width: 300px;
     height: 28px;
-    font-size: 25px;
+    font-size: 15px;
     vertical-align: middle;
     border: 1px solid white;
     border-radius: 15px;
     padding: 10px;
 }
 
-#addToDo{
-    height: 50px;
+.container .addToDo{
+    height: 30px;
     width: 40px;
-    margin: 10px 0 0 1px;
+    margin: 15px 0 0 1px;
     vertical-align: middle;
     font-size: 25px;
     border: 1px solid white;
-    background: #FF4B2B;
+    background: #fff;
     border-radius: 12px;
+    color: black;
 }
 
 .to-dos{
@@ -103,11 +102,10 @@
 }
 
 .paragraph-styling{
-    margin: 20px;
+    margin: 10px 0 0 35px;
     cursor: pointer;
     font-size: 20px;
     user-select: none;
 }
 
-*/
 

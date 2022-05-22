@@ -1,13 +1,13 @@
-let addToDoButton = document.getElementById('addToDo');
+let addToDoButton = document.getElementById('addTD');
 let toDoContainer = document.getElementById('toDoContainer');
-let inputField = document.getElementById('inputField');
+let inputField = document.getElementById('inputF');
 
 addToDoButton.addEventListener('click', function(){
     var paragraph = document.createElement('p');
     paragraph.classList.add('paragraph-styling');
-    paragraph.innerText = inputField.value;
+    paragraph.innerText = inputF.value;
     toDoContainer.appendChild(paragraph);
-    inputField.value = '';
+    inputF.value = '';
     paragraph.addEventListener('click',function(){
         paragraph.style.textDecoration = "line-through";
     })

@@ -7,7 +7,63 @@
     background-color: black;
     color: white;
     outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
+
+
+.header h1{
+    border: 5px solid white;
+    width: 85px;
+    height: auto;
+    margin: 10px 0 5px 5px;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 0.2s;
+}
+
+
+.header ul{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+}
+
+.header ul li{
+    display: flex;
+    margin: 30px 10px 0 10px;
+    align-items: center;
+}
+
+.header ul li a{
+    display: inline-block;
+    position: relative;
+}
+
+.header ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+}
+
+.header ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 
 .title h1{
     margin: 10px 0 0px 25px;
@@ -20,7 +76,7 @@
     display: block;
 }
 
-
+/*
 #inputField{
     margin: 10px 0 0 20px;
     width: 300px;
@@ -54,5 +110,5 @@
     user-select: none;
 }
 
-
+*/
 

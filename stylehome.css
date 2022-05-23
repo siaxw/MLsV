@@ -10,7 +10,8 @@
 }
 
 body{
-    background: #1b1d34;
+    /*background: #1b1d34;*/
+    background: black;
 }
 
 .header h1{
@@ -168,7 +169,7 @@ body{
   border: 5px solid black;
 }
 
-/*
+
 .footer{
   display: flex;
   height: 375px;
